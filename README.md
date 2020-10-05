@@ -41,8 +41,8 @@ DOM Level 2 introduced the foolowing new modules of the DOM to deal with new typ
 ## DOM Level 3:
 DOM Level 3 further extends the DOM with the introduction of methods to load and save documents in a uniform way and methods to validate a document. In level 3, the DOM Core is extended to support all of XML1.0, including XML Infoset, XPath, and XML Base.
 
-require 'BOM'
-# [What is Browser Object Model (BOM) ?](BOM)
+
+# <a name="BOM"></a> What is Browser Object Model (BOM) ?
 The Browser Object Model (BOM) allowed access and manipulation of the browser window, Using BOM, developers can interact with the browser outside of the context of it's displayed page.Primarily, the BOM deals with the browser window and frame, but generally any browser specific extension to javaScript is considerd to be part of the BOM. The following are such extensions:
 - The capability to pop-up new browser window.
 - The capability to move, resize, and close browser windows.
