@@ -7,6 +7,8 @@ This repository for showcase of my java script code base
 - [What is Document Object Model (DOM) ?](#DOM)
 - [What is Browser Object Model (BOM) ?](#BOM)
 - [The <SCRIPT> Element](#scriptElement)
+- [What is CDATA ?](#CDATA)
+- [Inline Code Versus External Files](#InlineVsExternal)
 
 # <a name="JavaScript"></a> What is JavaScript ?
 JavaScript is a text-based programming language used both on the client-side and server-side that allows you to make web pages interactive. Where HTML and CSS are languages that give structure and style to web pages, JavaScript gives web pages interactive elements that engage a user.
@@ -62,7 +64,7 @@ The primary method of inserting javascript into an HTML page via the <script> el
 - **src** - Optional. Indicated an external file that contain code to be excuted.
 - **type** - Optional. Replace *language*; indicates the content type(also called MIME type) of the scripting language being used by the code block.
 
-# What is CDATA ?
+# <a name="CDATA"></a> What is CDATA ?
 The term CDATA, meaning character data, is used to indicate areas of the document that contain free-form text not intended to be parsed.This enable you to use any character, including the less-than symbol, without incurring a syntax error. The format is as follows:
 ```<script type="text/javascript"><![CDATA[
 function compare(a,b){
@@ -74,4 +76,27 @@ function compare(a,b){
         alert("A is equal to B");
     }
 }
-]]></script>```
+]]></script>
+```
+In XHTML-compliant web browsers, this solves the problem. However, many browsers are still not XHTML-compliant and don't support the CDATA section. To work around this, the CDATA markup must be offset by JavaScript comments.
+```<script type="text/javascript">
+//<![CDATA[
+function compare(a,b){
+    if(a < b){
+        alert("A is less than B");
+    }else if( a > b){
+        alert("A is greater than B");
+    }else{
+        alert("A is equal to B");
+    }
+}
+//]]>
+</script>
+```
+This format works in modern browsers. Though a littile bit of a hack, it validates as XHTML and degrades gracefully for pre-XHTML browsers.
+
+# <a name="InlineVsExternal"></a> Inline Code Versus External Files
+Although it's possible to embed javascript in HTML file directly, it's generally considered a best practice to include as much java script as possible using external files. Keeping that in mind there is no hard and fast rules regarding this practice, the argument for using external file are as follows.
+- Maintainability
+- Caching
+- Future-proof
