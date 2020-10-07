@@ -109,8 +109,8 @@ The concept of document mode through the use of doctype switching. The primary d
 - **Standard Mode** - Which made Internet Explorer behave in a more standard-compliant way.
 - **EdgeHTML Mode** - EdgeHTML's rendering is meant to be fully compatible with the rendering of the Blink and WebKit layout engines, used by Google Chrome and Safari, respectively.
 
-# <a name="Noscript"></a> The <NOSCRIPT> Element
-Any Content contained in a <noscript> element will be displayed under only following two circumstances.
+# <a name="Noscript"></a> The `<NOSCRIPT>` Element
+Any Content contained in a `<noscript>` element will be displayed under only following two circumstances.
 - The browser doesn't support scripting
 - The browser scripting support is turned off.
 ```
