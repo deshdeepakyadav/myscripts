@@ -9,6 +9,8 @@ This repository for showcase of my java script code base
 - [The <SCRIPT> Element](#scriptElement)
 - [What is CDATA ?](#CDATA)
 - [Inline Code Versus External Files](#InlineVsExternal)
+- [Document Modes](#DocuMode)
+- [The <NOSCRIPT> Element](#Noscript)
 
 # <a name="JavaScript"></a> What is JavaScript ?
 JavaScript is a text-based programming language used both on the client-side and server-side that allows you to make web pages interactive. Where HTML and CSS are languages that give structure and style to web pages, JavaScript gives web pages interactive elements that engage a user.
@@ -100,3 +102,19 @@ Although it's possible to embed javascript in HTML file directly, it's generally
 - Maintainability
 - Caching
 - Future-proof
+
+# <a name="DocuMode"></a> Document Modes
+The concept of document mode through the use of doctype switching. The primary difference between these modes are related to the rendering of content with regards to CSS, there are also several side effects related to java script. 
+- **Quirks Mode** - Which made Internet Explorer behave as if it were version 5 (with several nonstandard features)
+- **Standard Mode** - Which made Internet Explorer behave in a more standard-compliant way.
+- **EdgeHTML Mode** - EdgeHTML's rendering is meant to be fully compatible with the rendering of the Blink and WebKit layout engines, used by Google Chrome and Safari, respectively.
+
+# <a name="Noscript"></a> The <NOSCRIPT> Element
+Any Content contained in a <noscript> element will be displayed under only following two circumstances.
+- The browser doesn't support scripting
+- The browser scripting support is turned off.
+```
+<noscript>
+<p>This page required a Javascript-enabled browser</p>
+</noscript>
+```
