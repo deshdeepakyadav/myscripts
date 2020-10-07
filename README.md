@@ -128,3 +128,25 @@ Uncaught TypeError: date is not a constructor
   - Variables start with lowercase letter. e.g. `var greenDuck;`
   - Objects and classes start with uppercase letter. e.g. `var date = new Date()`
   - Constant are all-caps. e.g. `const = CONSTANTLYUPPERCASE;`
+- whitespace Matters (to Humans)
+```
+// With whitespace
+var date = new Date();
+document.body.innerHTML = "<h1>" + date + "</h1>";
+
+//Without whitespace
+var date = new Date();
+document.body.innerHTML = "<h1>"+date+"</h1>";
+```
+- End Each Statement with a Semicolon
+- Use Comments Liberally
+```
+// A single-line comments starts with two slashes.
+var date = new Date();
+document.body.innerHTML = "<h1>" + date + "</h1>;
+
+/*A multi-line comments starts with a slash and an asterisk 
+and ends with an asterisk and a slash*/
+date = new Date();
+document.body.innerHTML = "<h1"> + date + "<h1>;
+```
