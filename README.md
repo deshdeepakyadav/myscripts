@@ -118,3 +118,13 @@ Any Content contained in a `<noscript>` element will be displayed under only fol
 <p>This page required a Javascript-enabled browser</p>
 </noscript>
 ```
+# How to write JavaScript?
+- JavaScript is Case Sensitivity
+```
+var date = new date();
+Uncaught TypeError: date is not a constructor
+```
+- Use camelCase
+  - Variables start with lowercase letter. e.g. `var greenDuck;`
+  - Objects and classes start with uppercase letter. e.g. `var date = new Date()`
+  - Constant are all-caps. e.g. `const = CONSTANTLYUPPERCASE;`
