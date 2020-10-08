@@ -1,4 +1,6 @@
-/**Primitive Data Type
+/**
+ Data type used to represent data. In javascript under 2 category data types defined.
+- Primitive Data Type
    - Undefined
    - Null
    - Boolean
