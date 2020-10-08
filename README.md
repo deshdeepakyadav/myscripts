@@ -13,6 +13,7 @@ This repository for showcase of my java script code base
 - [The `<NOSCRIPT>` Element](#Noscript)
 - [How to write JavaScript?](#HowToWrite)
 - [Variables](#Variables)
+- [Data Types](#DataType)
 
 # <a name="JavaScript"></a> What is JavaScript ?
 JavaScript is a text-based programming language used both on the client-side and server-side that allows you to make web pages interactive. Where HTML and CSS are languages that give structure and style to web pages, JavaScript gives web pages interactive elements that engage a user.
@@ -158,3 +159,15 @@ ECMAScript variables are loosely typed, meaning that a variable can hold any typ
 This code defines a varaible named *message* that can be used to hold any value.(Without initialization, it holds the special value *undefined*)
 - **Local Variable** - Variable makes it local to the scope in which it was defined.
 - **Global Variable** - By omitting the *var* operator variable becomes global but this apporach is not recommended. Strict Mode throw a ReferenceError when undeclared variable assigned a value.
+
+# <a name="DataType"></a> Data Types:
+Data type used to represent data. In javascript under 2 category data types defined.
+- **Primitive Data Type**
+   - Undefined
+   - Null
+   - Boolean
+   - Number
+   - String
+- **Complex Data Type**
+   - Object
+   - function
