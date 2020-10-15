@@ -14,6 +14,7 @@ This repository for showcase of my java script code base
 - [How to write JavaScript?](#HowToWrite)
 - [Variables](#Variables)
 - [Data Types](#DataType)
+- [Function Type](#FunctionType)
 
 # <a name="JavaScript"></a> What is JavaScript ?
 JavaScript is a text-based programming language used both on the client-side and server-side that allows you to make web pages interactive. Where HTML and CSS are languages that give structure and style to web pages, JavaScript gives web pages interactive elements that engage a user.
@@ -171,3 +172,8 @@ Data type used to represent data. In javascript under 2 category data types defi
 - **Complex Data Type**
    - Object
    - function
+
+# <a name="FunctionType"></a> Function Type
+- Regular Function
+- Anonymous Function
+- Immediately Invoked Function Expression (IIFE) 
